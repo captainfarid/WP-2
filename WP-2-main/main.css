@@ -1,0 +1,133 @@
+@font-face {
+    font-family: IRANSansWeb;
+    src: url("fonts/IRANSansWeb(FaNum).woff");
+}
+body{
+    font-family: IRANSansWeb, Tahoma;
+	background-image: linear-gradient(to right, #bb0303, #3c2b9a);
+	background-repeat:no-repeat;
+	dir: rtl;
+}
+input {
+    font-family: IRANSansWeb, Tahoma;
+}
+.mform{
+    background-image: linear-gradient(to right, #ffffff, #ff9ae5);
+	background-repeat:no-repeat;
+    width: 40%;
+    margin: 0 auto;
+}
+.mform label:not([for="single"]):not([for="married"]){
+    width: 140px;
+    display: inline-block;
+    padding: 10px;
+}
+.mform input:not([type="radio"]):not([type="checkbox"]), .mform textarea, .mform select{
+    width: 240px;
+    height: 30px;
+    margin-top: 15px;
+    outline: none;
+    font-family: IRANSansWeb;
+    font-size: 1em;
+}
+
+#address{
+    height: 45px;
+}
+.mform input:focus {
+    border: azure 1px solid;
+    border-radius: 1px;
+}
+.mform input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.1em !important;
+	font
+    background-color: #ff7171;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    -webkit-appearance: none;
+}
+.mform input[type="submit"]:hover{
+    cursor: pointer;
+}
+.birthf{
+    width: 65px !important;
+    display: inline-block;
+    margin: 0 !important;
+}
+#phone{
+    width: 220px;
+}
+#phoneP{
+    width: 20px;
+}
+
+.valid{
+    border: green 2px solid;
+    border-radius: 4px;
+}
+.invalid{
+    border: red 2px solid;
+    border-radius: 4px;
+}
+/* mobile device */
+
+@media (max-width: 600px) {
+    .mform{
+        width: 90%;
+        padding: 0 10px 0 10px;
+    }
+
+    .mform label:not([for="single"]):not([for="married"]){
+        width: 130px;
+        font-size: 1em;
+        padding: 0;
+    }
+    .mform label[for="marital"]{
+        padding-top: 10px !important;
+    }
+
+    .mform input:not([type="radio"]):not([type="checkbox"]), .main-form textarea, .main-form select{
+        width: 185px;
+    }
+    #phone{
+        width: 180px;
+    }
+    .birthf{
+        width: 35px !important;
+    }
+    .two-item{
+        padding: 0;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+    .mform{
+        width: 75%;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1001px) {
+    .mform{
+        width: 60%;
+    }
+}
+@media (min-width: 800px) {
+    .two-item label{
+        width: 80px !important;
+    }
+    .two-item input{
+        width: 140px !important;
+    }
+    .two-item #phone{
+        width: 120px !important;
+    }
+}
+
+.two-item {
+    width: 100%;
+    padding: 10px;
+}
